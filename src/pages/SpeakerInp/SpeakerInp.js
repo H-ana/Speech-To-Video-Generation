@@ -29,14 +29,14 @@ export const SpeakerInp = () => {
   };
 
   return (
-    <div>
-      <h1>TAP to speak!!!</h1>
-      <button onClick={handleStartStopClick}>
+    <div className='speak_container'>
+      <h1 className='speak_title'>TAP to speak!!!</h1>
+      <button onClick={handleStartStopClick} className='speak_button'>
         {isListening ? 'Stop Listening' : 'Start Listening'}
       </button>
-      <div>
-        <h2>Transcription:</h2>
-        <div class="box">
+      <div className='trans_box'>
+        <h2 className='speak_trans'>Transcription:</h2>
+        <div className='box'>
         <p>{transcription}</p>
         </div>
         

@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Rock+Salt&display=swap");
+.home__container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 2rem;
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(104.98deg,#1c293c 2.26%, #50f4f9 93.54%);;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.home__content {
+    width: 80%;
+    margin: 6rem;
+    flex-direction: column;
+    gap: 0px;
+}
+
+
+
+
+
+
+.home__title {
+    font-size: 8rem;
+    text-align: left;
+    color: #ffffff;
+}
+
+.home__intro {
+    font-family: "Work Sans";
+    color: rgb(163, 158, 158);
+    font-size: 2.2rem;
+    text-align: left;
+    padding-left: 5rem;
+}
+
+.home__button {
+    display: flex;
+    justify-content: center;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    align-items: center;
+    width: 10rem;
+    border: none;
+    background:#356487;
+    cursor: pointer;
+    border-radius: 1rem;
+    color: #bcd3e2;
+    padding: 0.95rem;
+    font-display: center;
+    font-size: 1.2rem;
+    text-align: center;
+    box-shadow: 4px 4px 12px #05182D, inset 4px 4px 14px rgba(255, 255, 255, 0.25);
+}
+.home__button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.home__image{
+    width: 50%;
+}
+.Font {
+    font-family: "Rock Salt", cursive;
+}
+
+            @media(min-device-width: 200px) and (max-device-width: 800px) {
+                .home__title {
+                    font-size: 5rem;
+                }
+                .home__content>div {
+                    margin: 1rem;
+                }
+                .home__intro {
+                    font-size: 1.2rem;
+                }
+                .home__button {
+                    width: 8rem;
+                    font-size: .9rem;
+                }
+            }
+
+            @media screen and (max-device-width: 250px) {
+                body {
+                    display: none;
+                }
+            }

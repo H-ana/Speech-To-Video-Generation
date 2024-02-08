@@ -1,0 +1,45 @@
+/* SelectSubject.css */
+
+.select_container {
+    text-align: center;
+    min-height: 100vh;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url('../../assets/linepic.jpg');
+    /* background:linear-gradient(104.98deg,#1c293c 39.26%, #50f4f9 93.54%);;; */
+    background-size: cover;
+    
+  }
+  .overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure it's above the background image */
+  }
+  .select_title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ccc;
+    z-index: 2;
+  }
+  
+  .select-box {
+    width: 300px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    z-index: 2;
+  }
+  
+  .placeholder {
+    color: #888; 
+    z-index: 2;
+  }
+  
