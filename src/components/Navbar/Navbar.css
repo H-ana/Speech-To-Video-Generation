@@ -1,0 +1,36 @@
+.navbar {
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-right: 60px;
+    background: linear-gradient(104.98deg,#131b28 2.26%, #53a1a4 93.54%);
+  }
+.navbar-icon {
+    width: 80px;
+    height:60px;
+    fill: white;
+}
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size:larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+.navbar-item {
+ margin-left: 40px;
+}
+.navbar-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.navbar-link:hover{
+  color:burlywood;
+  text-decoration: underline;
+}
+
+  

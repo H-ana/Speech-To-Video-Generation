@@ -2,6 +2,7 @@ import React from 'react'
 import './homepage.css'; 
 import { useNavigate } from 'react-router-dom';
 import robo from '../../assets/robo.png';
+import Navbar from '../../components/Navbar/Navbar'
 const Homepage = () => {
 
   const navigate = useNavigate();
@@ -13,7 +14,8 @@ const Homepage = () => {
 
 
   return (
-  
+    <div>
+      <Navbar/>
       <div className="home__container">
         <div className="home__content">
             <div className="home__title">
@@ -26,7 +28,8 @@ const Homepage = () => {
             <button className="home__button" onClick={handleClick}>Click Me</button>
         </div>  
         <div className="home__image">
-        <img src={robo} alt="Image" />
+          <img src={robo} alt="Robot" />
+        </div>
       </div>
     </div>
   )
