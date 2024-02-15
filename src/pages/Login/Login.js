@@ -102,6 +102,8 @@ function Login() {
     <div className="login">
       {value === false && (
         <div className="login-container">
+
+        <h1><span className="lo_name">LO</span><span className="gin_name">GIN</span></h1>
           <form onSubmit={signIn}>
             {errorMesg && (<div className="error-message">{errorMesg}</div>)}
             <label htmlFor="email">Email</label>

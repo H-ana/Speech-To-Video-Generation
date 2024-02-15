@@ -26,7 +26,7 @@ const Homepage = () => {
             <button className="home__button" onClick={handleClick}>Click Me</button>
         </div>  
         <div className="home__image">
-        <img src={robo} alt="Image" />
+        {/* <img src={robo} alt="Image" /> */}
       </div>
     </div>
   )

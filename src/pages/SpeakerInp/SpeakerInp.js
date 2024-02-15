@@ -30,16 +30,17 @@ export const SpeakerInp = () => {
 
   return (
     <div className='speak_container'>
+      <div className='center__items'>
       <h1 className='speak_title'>TAP to speak!!!</h1>
       <button onClick={handleStartStopClick} className='speak_button'>
         {isListening ? 'Stop Listening' : 'Start Listening'}
       </button>
+      </div>
       <div className='trans_box'>
         <h2 className='speak_trans'>Transcription:</h2>
         <div className='box'>
-        <p>{transcription}</p>
+          <p>{transcription}</p>
         </div>
-        
       </div>
     </div>
   );
