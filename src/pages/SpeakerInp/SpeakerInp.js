@@ -9,38 +9,15 @@ const SpeakerInp = () => {
     if (isListening) {
       setIsListening(false);
     } else {
-      navigator.mediaDevices.getUserMedia({ audio: true })
-        .then(stream => {
-          const recognition = new window.SpeechRecognition();
-          recognition.lang = 'en-US';
-          recognition.onresult = (event) => {
-            const transcript = event.results[0][0].transcript;
-            setTranscription(transcript);
-            sendAudioData(event.results[0][0].blob);
-          };
-          recognition.start();
-        })
-        .catch(error => {
-          console.error('Error capturing audio:', error);
-        });
+      const recognition = new window.webkitSpeechRecognition(); // Using polyfill
+      recognition.lang = 'en-US';
+      recognition.onresult = (event) => {
+        const transcript = event.results[0][0].transcript;
+        setTranscription(transcript);
+      };
+      recognition.start();
       setIsListening(true);
     }
-  };
-
-  const sendAudioData = (audioBlob) => {
-    const formData = new FormData();
-    formData.append('audio', audioBlob);
-    fetch('/process_audio', {
-      method: 'POST',
-      body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-      setTranscription(data.transcription); // Update transcription state with received data
-    })
-    .catch(error => {
-      console.error('Error processing audio:', error);
-    });
   };
 
   return (
